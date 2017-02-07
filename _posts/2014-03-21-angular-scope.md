@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转 Test]深入理解 AngularJS 的 Scope
+title: [转]深入理解 AngularJS 的 Scope
 cover: cover.jpg
 date:   2016-12-09 12:00:00
 categories: posts
@@ -17,17 +17,20 @@ JavaScript 的原型继承就是奇葩。
 这个问题很典型，比方说当前页面是一个产品列表，那么就需要定义一个 ProductListController
 
 ```javascript
-	function ProductListController($scope, $http) {
-	    $http.get('/api/products.json')
-	        .success(function(data){
-	            $scope.productList = data;
-	        });
-	    $scope.selectedProduct = {};
-	}
+function ProductListController($scope, $http) {
+    $http.get('/api/products.json')
+        .success(function(data){
+            $scope.productList = data;
+        });
+    $scope.selectedProduct = {};
+}
 ```
 
-<iframe width="100%" height="300" src="//jsfiddle.net/liucui/q93wd5s0/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## 二、解决的办法
 
 解决的办法就是不使用基本数据类型，而在 Model 里永远多加一个点.
+
+
+
+<iframe width="100%" height="300" src="//jsfiddle.net/liucui/q93wd5s0/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
