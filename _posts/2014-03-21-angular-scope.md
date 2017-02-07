@@ -16,6 +16,7 @@ JavaScript 的原型继承就是奇葩。
 
 这个问题很典型，比方说当前页面是一个产品列表，那么就需要定义一个 ProductListController
 
+```javascript
 	function ProductListController($scope, $http) {
 	    $http.get('/api/products.json')
 	        .success(function(data){
@@ -23,6 +24,7 @@ JavaScript 的原型继承就是奇葩。
 	        });
 	    $scope.selectedProduct = {};
 	}
+```
 
 ## 二、解决的办法
 
