@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转]深入理解 AngularJS 的 Scope
+title: [转 Test]深入理解 AngularJS 的 Scope
 cover: cover.jpg
 date:   2016-12-09 12:00:00
 categories: posts
