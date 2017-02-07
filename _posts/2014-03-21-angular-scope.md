@@ -26,6 +26,8 @@ JavaScript 的原型继承就是奇葩。
 	}
 ```
 
+<iframe width="100%" height="300" src="//jsfiddle.net/liucui/q93wd5s0/embedded/html,css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 ## 二、解决的办法
 
 解决的办法就是不使用基本数据类型，而在 Model 里永远多加一个点.
