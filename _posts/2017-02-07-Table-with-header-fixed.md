@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 实现头部和列固定的长表格
-cover: cover.jpg
 date:   2017-02-07
 categories: posts
 ---
